@@ -1,6 +1,6 @@
 # dsh-sysmon
 
-**Sidebar system monitor for [DeepSeek Harness](https://github.com/deepseek-ai)** — CPU, memory, temperature, fan speed and power draw, right above your account row.
+**Sidebar system monitor for DeepSeek Harness** — CPU, memory, temperature, fan speed and power draw, right above your account row.
 
 一个 DeepSeek Harness 社区插件：在侧栏底部（账号行上方）显示实时系统状态。
 
@@ -125,3 +125,19 @@ rm ~/.dsh/profiles/desktop/node_modules/dsh-sysmon
 ## License
 
 MIT
+
+---
+
+## Repo metadata (for maintainers)
+
+Suggested repository description:
+
+> macOS system monitor plugin for DeepSeek Harness — CPU, memory, temperature, fan speed and power in the sidebar.
+
+Suggested GitHub topics:
+
+```
+deepseek-harness  dsh-plugin  deepseek  cordis  macos  system-monitor  smc  apple-silicon
+```
+
+Search terms this README targets: *DeepSeek Harness 插件*, *DSH plugin*, *macOS 温度监控*, *fan speed menu bar*, *Apple Silicon sensors*.
