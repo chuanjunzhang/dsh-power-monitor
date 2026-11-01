@@ -1,7 +1,7 @@
 {
   "name": "dsh-sysmon",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "description": "Sidebar system monitor for DeepSeek Harness: CPU, memory, temperature, fan speed and power draw.",
   "exports": {
@@ -44,11 +44,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/OWNER/dsh-sysmon.git"
+    "url": "https://github.com/chuanjunzhang/dsh-sysmon.git"
   },
-  "homepage": "https://github.com/OWNER/dsh-sysmon#readme",
+  "homepage": "https://github.com/chuanjunzhang/dsh-sysmon#readme",
   "bugs": {
-    "url": "https://github.com/OWNER/dsh-sysmon/issues"
+    "url": "https://github.com/chuanjunzhang/dsh-sysmon/issues"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "author": "chuanjunzhang"
 }

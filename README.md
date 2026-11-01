@@ -29,7 +29,7 @@ Without the privileged helper the widget still works, showing CPU and memory onl
 ### 1. Plugin (no admin)
 
 ```bash
-git clone https://github.com/<your-name>/dsh-sysmon.git
+git clone https://github.com/chuanjunzhang/dsh-sysmon.git
 cd dsh-sysmon
 ./install-plugin.sh
 ```
