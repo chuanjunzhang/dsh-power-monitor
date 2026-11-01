@@ -1,8 +1,8 @@
 /**
- * dsh-sysmon — 宿主侧
+ * dsh-power-monitor — 宿主侧
  *
- * 提供 GET /sysmon/metrics：
- *  - 优先读取特权助手写入的快照 /tmp/dsh-sysmon.json（含温度、风扇、功耗）
+ * 提供 GET /power-monitor/metrics：
+ *  - 优先读取特权助手写入的快照 /tmp/dsh-power-monitor.json（含温度、风扇、功耗）
  *  - 助手未安装时退化为免密的 CPU/内存数据
  */
 import { readFile } from 'node:fs/promises'
@@ -14,7 +14,7 @@ const execFileAsync = promisify(execFile)
 
 export const inject = ['webServer']
 
-const SNAPSHOT = '/tmp/dsh-sysmon.json'
+const SNAPSHOT = '/tmp/dsh-power-monitor.json'
 const MAX_AGE_MS = 8000
 
 async function readSnapshot() {
@@ -65,7 +65,7 @@ async function fallbackMetrics() {
 export function apply(ctx) {
   ctx.effect(() => ctx.webServer.register({
     kind: 'exact',
-    path: '/sysmon/metrics',
+    path: '/power-monitor/metrics',
     handler: async (req, res) => {
       const base = await fallbackMetrics()
       const snap = await readSnapshot()

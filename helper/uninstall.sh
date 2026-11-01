@@ -3,10 +3,10 @@
 set -euo pipefail
 osascript <<'APPLESCRIPT'
 do shell script "
-launchctl bootout system/com.local.dsh-sysmon 2>/dev/null || true
-rm -f /Library/LaunchDaemons/com.local.dsh-sysmon.plist
-rm -f /usr/local/libexec/dsh-sysmon-helper.sh /usr/local/libexec/dsh-sysmon-smc
-rm -f /tmp/dsh-sysmon.json
+launchctl bootout system/com.local.dsh-power-monitor 2>/dev/null || true
+rm -f /Library/LaunchDaemons/com.local.dsh-power-monitor.plist
+rm -f /usr/local/libexec/dsh-power-monitor-helper.sh /usr/local/libexec/dsh-power-monitor-smc
+rm -f /tmp/dsh-power-monitor.json
 echo done
 " with administrator privileges
 APPLESCRIPT

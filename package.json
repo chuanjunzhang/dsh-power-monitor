@@ -1,9 +1,9 @@
 {
-  "name": "dsh-sysmon",
+  "name": "dsh-power-monitor",
   "version": "0.1.0",
   "private": false,
   "type": "module",
-  "description": "Sidebar system monitor for DeepSeek Harness: CPU, memory, temperature, fan speed and power draw.",
+  "description": "Real-time power draw, temperature, fan speed, CPU and memory in the DeepSeek Harness sidebar (Apple Silicon macOS).",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -35,20 +35,22 @@
     "deepseek",
     "cordis-plugin",
     "macos",
+    "power-monitor",
+    "wattage",
+    "power-draw",
     "system-monitor",
-    "menu-bar",
     "smc",
     "fan-speed",
     "temperature",
-    "power-monitor"
+    "apple-silicon"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/chuanjunzhang/dsh-sysmon.git"
+    "url": "https://github.com/chuanjunzhang/dsh-power-monitor.git"
   },
-  "homepage": "https://github.com/chuanjunzhang/dsh-sysmon#readme",
+  "homepage": "https://github.com/chuanjunzhang/dsh-power-monitor#readme",
   "bugs": {
-    "url": "https://github.com/chuanjunzhang/dsh-sysmon/issues"
+    "url": "https://github.com/chuanjunzhang/dsh-power-monitor/issues"
   },
   "license": "MIT",
   "author": "chuanjunzhang"

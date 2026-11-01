@@ -3,7 +3,7 @@
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 PROFILE="${DSH_PROFILE:-$HOME/.dsh/profiles/desktop}"
-PKG="dsh-sysmon"
+PKG="dsh-power-monitor"
 
 [ -d "$PROFILE" ] || { echo "找不到 profile: $PROFILE"; exit 1; }
 mkdir -p "$PROFILE/node_modules"

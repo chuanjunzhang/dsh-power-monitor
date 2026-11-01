@@ -1,7 +1,7 @@
 #!/bin/bash
-# dsh-sysmon 特权助手：采集 SMC（风扇/温度）+ powermetrics（功耗），写入快照供插件读取
-SMC=/usr/local/libexec/dsh-sysmon-smc
-OUT=/tmp/dsh-sysmon.json
+# dsh-power-monitor 特权助手：采集 SMC（风扇/温度）+ powermetrics（功耗），写入快照供插件读取
+SMC=/usr/local/libexec/dsh-power-monitor-smc
+OUT=/tmp/dsh-power-monitor.json
 PM=/usr/bin/powermetrics
 
 while true; do

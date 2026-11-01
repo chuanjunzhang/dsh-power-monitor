@@ -1,11 +1,11 @@
 /**
- * dsh-sysmon — 客户端（v2）
+ * dsh-power-monitor — 客户端（v2）
  *
  * 侧栏底部系统状态卡片：数值按阈值染色，状态点取最严重的一项。
  * 不新增任何采集项，只在渲染层做颜色与排版处理。
  */
 window.__ModuleLoader__.load({
-  id: 'dsh-sysmon',
+  id: 'dsh-power-monitor',
   factory(require) {
     const React = require('react')
     const h = React.createElement
@@ -112,7 +112,7 @@ window.__ModuleLoader__.load({
         let stopped = false
         const tick = async () => {
           try {
-            const res = await fetch('/sysmon/metrics', { cache: 'no-store' })
+            const res = await fetch('/power-monitor/metrics', { cache: 'no-store' })
             const data = await res.json()
             if (stopped) return
             // 功耗抖动大：取最近 3 次中位数平滑（仅渲染层，不增加采集）

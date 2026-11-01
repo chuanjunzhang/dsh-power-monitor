@@ -2,13 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>Label</key><string>com.local.dsh-sysmon</string>
+  <key>Label</key><string>com.local.dsh-power-monitor</string>
   <key>ProgramArguments</key>
-  <array><string>/usr/local/libexec/dsh-sysmon-helper.sh</string></array>
+  <array><string>/usr/local/libexec/dsh-power-monitor-helper.sh</string></array>
   <key>RunAtLoad</key><true/>
   <key>KeepAlive</key><true/>
   <key>ProcessType</key><string>Background</string>
   <key>LowPriorityIO</key><true/>
-  <key>StandardErrorPath</key><string>/var/log/dsh-sysmon.err.log</string>
+  <key>StandardErrorPath</key><string>/var/log/dsh-power-monitor.err.log</string>
 </dict>
 </plist>

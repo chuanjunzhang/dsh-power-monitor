@@ -1,4 +1,4 @@
-# dsh-sysmon：侧栏底部系统监控（宿主侧提供 /sysmon/metrics）
+# dsh-power-monitor：侧栏底部系统监控（宿主侧提供 /sysmon/metrics）
 - insert:
     - id: sysmon
-      name: 'dsh-sysmon'
+      name: 'dsh-power-monitor'
