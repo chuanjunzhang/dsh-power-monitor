@@ -1,0 +1,54 @@
+{
+  "name": "dsh-sysmon",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Sidebar system monitor for DeepSeek Harness: CPU, memory, temperature, fan speed and power draw.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "deepseek",
+    "cordis-plugin",
+    "macos",
+    "system-monitor",
+    "menu-bar",
+    "smc",
+    "fan-speed",
+    "temperature",
+    "power-monitor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OWNER/dsh-sysmon.git"
+  },
+  "homepage": "https://github.com/OWNER/dsh-sysmon#readme",
+  "bugs": {
+    "url": "https://github.com/OWNER/dsh-sysmon/issues"
+  },
+  "license": "MIT"
+}
