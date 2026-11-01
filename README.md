@@ -4,10 +4,12 @@
 
 一个 DeepSeek Harness 社区插件：在侧栏底部（账号行上方）显示实时系统状态。
 
+![dsh-sysmon in the sidebar](docs/preview.png)
+
 ```
-● CPU 16%   MEM 13.3G
-  TEMP 40°  FAN 0 rpm
-  PWR 1.2W
+CPU 13%   MEM 14.8G
+TEMP 41°  FAN 0 rpm
+● PWR     1.1W
 ```
 
 Columns are colour-coded by threshold — green → amber → orange → red — so a hot machine is obvious at a glance.
